@@ -230,7 +230,6 @@ Description : DOM Elements.
 
 				// Task 4: Create a new <p> element and append it to the 'About Us' section
 					var new_p = document.createElement("p");
-					new_p.className = "container";
 					new_p.style.color = "red";
 					new_p.textContent = "This is a new paragraph.";
 					var about_us = document.querySelector("section");
@@ -253,14 +252,11 @@ Description : DOM Elements.
 				// Task 7: Add a new item in the navigation menu
 					var new_li = document.createElement("li");
 					var new_a = document.createElement("a");
-					new_li.className = "container";
-					new_a.className = "container";
 					new_a.setAttribute('href', '#');
 					new_a.innerHTML = 'Blog';
-					var blog = document.querySelector("nav ul");
-					blog.append(new_a);
+					
 					var nav_menu = document.querySelector("nav ul");
-					nav_menu.appendChild(new_li);
+					nav_menu.appendChild(new_a);
 
 
 				// Task 8: Change the submit button text upon clicking and make it disabled
